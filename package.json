@@ -1,0 +1,19 @@
+{
+	"name": "cmk-dev-happiness",
+	"private": false,
+	"version": "1.0.0",
+	"description": "A template for creating new CodeMeKathy repositories.",
+	"main": "index.js",
+	"scripts": {},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/CodeMeKathy/cmk-dev-happiness.git"
+	},
+	"keywords": [
+		"template",
+		"docs"
+	],
+	"author": "Kathy Lambert <Kathy@KathyLambert.me/> (https://kathylambert.me/)",
+	"license": "MIT",
+	"homepage": "https://github.com/CodeMeKathy/cmk-dev-happiness#readme"
+}
