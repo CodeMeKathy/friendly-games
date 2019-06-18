@@ -9,16 +9,7 @@ This repository is meant to serve as a general template for how to set up new Co
 These instructions are basic; you can use any method to do this work. The important part is making sure that you follow the checklist below before publishing the repository.
 
 ```sh
-# Let's make a new folder
-mkdir new-repo && cd new-repo
-# Start a Git instance and copy over template files.
-git init
-cp ../cmk-dev-happiness/* .
-# Overwrite this README
-mv README.md setup-checklist.md
-mv example-README.md README.md
-# Go over and check off the checklist, and finally
-rm setup-checklist
+
 ```
 
 ## ✅ Checklist ✅
