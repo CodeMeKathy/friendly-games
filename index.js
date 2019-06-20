@@ -41,7 +41,7 @@ let cards = [
 	},
 	{
 		id: 'card10',
-		cardFrontImage: 'images/memoryCards/asterisk-solid.svg'
+		cardFrontImage: 'images/memoryCards/praying-hands-solid.svg'
 	},
 	{
 		id: 'card11',
@@ -53,19 +53,79 @@ let cards = [
 	},
 	{
 		id: 'card13',
-		cardFrontImage: 'memGame/friendly-games/images/memoryCards/cloud-sun-rain-solid.svg'
+		cardFrontImage: 'memGame/friendly-games/images/memoryCards/cannabis-solid.svg'
 	},
 	{
 		id: 'card14',
-		cardFrontImage: 'memGame/friendly-games/images/memoryCards/cocktail-solid.svg'
-	},
-	{
-		id: 'card15',
 		cardFrontImage: 'memGame/friendly-games/images/memoryCards/cloud-sun-rain-solid.svg'
 	},
 	{
-		id: 'card16',
+		id: 'card15',
 		cardFrontImage: 'memGame/friendly-games/images/memoryCards/cocktail-solid.svg'
+	},
+	{
+		id: 'card16',
+		cardFrontImage: 'memGame/friendly-games/images/memoryCards/code-solid.svg'
+	},
+	{
+		id: 'card17',
+		cardFrontImage: 'images/memoryCards/coffee-solid.svg'
+	},
+	{
+		id: 'card18',
+		cardFrontImage: 'images/memoryCards/dev-brands.svg'
+	},
+	{
+		id: 'card19',
+		cardFrontImage: 'memGame/friendly-games/images/memoryCards/door-open-solid.svg'
+	},
+	{
+		id: 'card20',
+		cardFrontImage: 'memGame/friendly-games/images/memoryCards/female-solid.svg'
+	},
+	{
+		id: 'card21',
+		cardFrontImage: 'memGame/friendly-games/images/memoryCards/free-code-camp-brands.svg'
+	},
+	{
+		id: 'card22',
+		cardFrontImage: 'memGame/friendly-games/images/memoryCards/gem-regular.svg'
+	},
+	{
+		id: 'card23',
+		cardFrontImage: 'memGame/friendly-games/images/github-brands.svg'
+	},
+	{
+		id: 'card24',
+		cardFrontImage: 'images/memoryCards/glass-martini-alt-solid'
+	},
+	{
+		id: 'card25',
+		cardFrontImage: 'images/memoryCards/headphones-solid.svg'
+	},
+	{
+		id: 'card26',
+		cardFrontImage: 'memGame/friendly-games/images/memoryCards/heart-solid.svg'
+	},
+	{
+		id: 'card27',
+		cardFrontImage: 'memGame/friendly-games/images/hiking-solid.svg'
+	},
+	{
+		id: 'card28',
+		cardFrontImage: 'memGame/friendly-games/images/memoryCards/icons-solid.svg'
+	},
+	{
+		id: 'card29',
+		cardFrontImage: 'memGame/friendly-games/images/memoryCards/lemon-regular.svg'
+	},
+	{
+		id: 'card30',
+		cardFrontImage: 'memGame/friendly-games/images/memoryCards/passport-solid.svg'
+	},
+	{
+		id: 'card16',
+		cardFrontImage: 'memGame/friendly-games/images/memoryCards/pepper-hot-solid.svg'
 	}
 ]
 
