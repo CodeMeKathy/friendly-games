@@ -1,6 +1,7 @@
 /* Overall Styling */
 body {
 	background-color: #d6abb1;
+	/* height: 100vh; */
 }
 
 /* Header */
@@ -18,11 +19,39 @@ body {
 	font-size: 18px;
 }
 
-/* Main */
+/* Header */
 .heading {
 	margin: 0 auto;
-  text-align: center;
+	text-align: center;
 	font-family: 'Oregano', cursive;
+	padding-top: 0.5em;
+}
+
+/* Main */
+
+#gameBoardWrapper {
+	display: flex;
+	flex-direction: row;
+	padding-top: 1em;
+	flex-wrap: wrap;
+	/* margin-bottom: 1em; */
+	/* height: 540px; */
+}
+
+#gameBoard {
+	margin: 0 auto;
+	flex-wrap: wrap;
+	width: 450px;
+	/* height: 340px; */
+}
+
+img {
+	width: 105px;
+	height: 100px;
+	background-color: #ccfbfe;
+	border-radius: 43% 49% 48% 30% / 0% 41% 0% 47%;
+	padding: 1em; /*Consider removing*/
+	margin: 0.2em;
 }
 
 /* Footer */
@@ -33,7 +62,7 @@ footer {
 	align-items: flex-end;
 	position: absolute;
 	bottom: 0;
-	padding-top: 10px;
+	padding-top: 0.2em;
 	padding-right: 15px !important;
 	padding-left: 15px !important;
 	color: #d6abb1;
@@ -41,10 +70,35 @@ footer {
 	background-color: #d9d9d9;
 }
 
-/* Media Queries */
+.footer-text {
+	margin-bottom: 4px;
+	margin-top: 5px;
+}
+
+/* Media Queries
 
 @media (max-width: 576px) {
 	footer {
 		font-size: 0.7rem;
+	}
+} */
+
+@media (max-width: 375px) {
+	img {
+		width: 75px;
+		height: 75px;
+		background-color: #ccfbfe;
+		border-radius: 43% 49% 48% 30% / 0% 41% 0% 47%;
+		padding: 1em; /*Consider removing*/
+	}
+	#gameBoard {
+		padding: 1em;
+		margin: 0.1em;
+	}
+	#right-footer {
+		text-align: right;
+	}
+	#left-footer {
+		text-align: left;
 	}
 }
