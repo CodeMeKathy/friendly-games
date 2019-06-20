@@ -1,11 +1,11 @@
 // Option I
 
-// Create an array of cards with card objects
+// Create an array of cards with card objects ✅
 
 let cards = [
 	{
 		id: 'card1',
-		cardFrontImage: 'memGame/friendly-games/images/memoryCards/accessible-icon-brands.svg'
+		cardFrontImage: 'images/memoryCards/accessible-icon-brands.svg'
 	},
 	{
 		id: 'card2',
@@ -17,27 +17,27 @@ let cards = [
 	},
 	{
 		id: 'card4',
-		cardFrontImage: 'memGame/friendly-games/images/memoryCards/balance-scale-right-solid.svg'
+		cardFrontImage: 'images/memoryCards/balance-scale-right-solid.svg'
 	},
 	{
 		id: 'card5',
-		cardFrontImage: 'memGame/friendly-games/images/memoryCards/brain-solid.svg'
+		cardFrontImage: 'images/memoryCards/brain-solid.svg'
 	},
 	{
 		id: 'card6',
-		cardFrontImage: 'memGame/friendly-games/images/memoryCards/cloud-sun-rain-solid.svg'
+		cardFrontImage: 'images/memoryCards/cloud-sun-rain-solid.svg'
 	},
 	{
 		id: 'card7',
-		cardFrontImage: 'memGame/friendly-games/images/memoryCards/cocktail-solid.svg'
+		cardFrontImage: 'images/memoryCards/cocktail-solid.svg'
 	},
 	{
 		id: 'card8',
-		cardFrontImage: 'memGame/friendly-games/images/memoryCards/accessible-icon-brands.svg'
+		cardFrontImage: 'images/memoryCards/heart-solid.svg'
 	},
 	{
 		id: 'card9',
-		cardFrontImage: 'images/memoryCards/angrycreative-brands.svg'
+		cardFrontImage: 'images/memoryCards/icons-solid.svg'
 	},
 	{
 		id: 'card10',
@@ -45,27 +45,27 @@ let cards = [
 	},
 	{
 		id: 'card11',
-		cardFrontImage: 'memGame/friendly-games/images/memoryCards/balance-scale-right-solid.svg'
+		cardFrontImage: 'images/memoryCards/lemon-regular.svg'
 	},
 	{
 		id: 'card12',
-		cardFrontImage: 'memGame/friendly-games/images/memoryCards/brain-solid.svg'
+		cardFrontImage: 'images/memoryCards/hiking-solid.svg'
 	},
 	{
 		id: 'card13',
-		cardFrontImage: 'memGame/friendly-games/images/memoryCards/cannabis-solid.svg'
+		cardFrontImage: 'images/memoryCards/cannabis-solid.svg'
 	},
 	{
 		id: 'card14',
-		cardFrontImage: 'memGame/friendly-games/images/memoryCards/cloud-sun-rain-solid.svg'
+		cardFrontImage: 'images/memoryCards/pepper-hot-solid.svg'
 	},
 	{
 		id: 'card15',
-		cardFrontImage: 'memGame/friendly-games/images/memoryCards/cocktail-solid.svg'
+		cardFrontImage: 'images/memoryCards/passport-solid.svg'
 	},
 	{
 		id: 'card16',
-		cardFrontImage: 'memGame/friendly-games/images/memoryCards/code-solid.svg'
+		cardFrontImage: 'images/memoryCards/code-solid.svg'
 	},
 	{
 		id: 'card17',
@@ -77,23 +77,23 @@ let cards = [
 	},
 	{
 		id: 'card19',
-		cardFrontImage: 'memGame/friendly-games/images/memoryCards/door-open-solid.svg'
+		cardFrontImage: 'images/memoryCards/door-open-solid.svg'
 	},
 	{
 		id: 'card20',
-		cardFrontImage: 'memGame/friendly-games/images/memoryCards/female-solid.svg'
+		cardFrontImage: 'images/memoryCards/female-solid.svg'
 	},
 	{
 		id: 'card21',
-		cardFrontImage: 'memGame/friendly-games/images/memoryCards/free-code-camp-brands.svg'
+		cardFrontImage: 'images/memoryCards/free-code-camp-brands.svg'
 	},
 	{
 		id: 'card22',
-		cardFrontImage: 'memGame/friendly-games/images/memoryCards/gem-regular.svg'
+		cardFrontImage: 'images/memoryCards/gem-regular.svg'
 	},
 	{
 		id: 'card23',
-		cardFrontImage: 'memGame/friendly-games/images/github-brands.svg'
+		cardFrontImage: 'images/github-brands.svg'
 	},
 	{
 		id: 'card24',
@@ -102,47 +102,44 @@ let cards = [
 	{
 		id: 'card25',
 		cardFrontImage: 'images/memoryCards/headphones-solid.svg'
-	},
-	{
-		id: 'card26',
-		cardFrontImage: 'memGame/friendly-games/images/memoryCards/heart-solid.svg'
-	},
-	{
-		id: 'card27',
-		cardFrontImage: 'memGame/friendly-games/images/hiking-solid.svg'
-	},
-	{
-		id: 'card28',
-		cardFrontImage: 'memGame/friendly-games/images/memoryCards/icons-solid.svg'
-	},
-	{
-		id: 'card29',
-		cardFrontImage: 'memGame/friendly-games/images/memoryCards/lemon-regular.svg'
-	},
-	{
-		id: 'card30',
-		cardFrontImage: 'memGame/friendly-games/images/memoryCards/passport-solid.svg'
-	},
-	{
-		id: 'card16',
-		cardFrontImage: 'memGame/friendly-games/images/memoryCards/pepper-hot-solid.svg'
 	}
 ]
 
 // Create an array for the cards currently in play.
 let cardsInPlay = []
 
-// Create game board
-let createBoard = () => {
-	for (let i = 0; i < 16; i++) {
-		let cardElement = document.createElement('img')
-		cardElement.setAttribute('data-id', [i])
-		document.getElementById('gameBoard').appendChild(cardElement)
+let checkForMatch = () => {
+	if (cardsInPlay[0] === cardsInPlay[1]) {
+		// leave both card backs visible.
+	} else {
+		// turn both cards over.
 	}
+	// setTimeOut(1000, checkForMatch())
 }
 
-console.log(cardsInPlay)
-createBoard()
+let flipCard = function() {
+	let cardId = this.getAttribute('data-id', cards[0].id) // ?[0]?
+	this.setAttribute('src', cards[cardId].cardFrontImage)
+	if (cardsInPlay.length === 2) {
+		// checkForMatch()
+	}
+	// console.log('src')
+}
+
+// Create game board ✅
+let createBoard = (() => {
+	for (let i = 0; i < 16; i++) {
+		// Create an image element for each item in the array.
+		let cardElement = document.createElement('img')
+		// Set each created image element with data attribute of `data-id`.
+		cardElement.setAttribute('data-id', [i])
+		// Add onClick to each created element.
+		cardElement.addEventListener('click', flipCard)
+
+		// Append the created images to the html element gameBoard as child elements.
+		document.getElementById('gameBoard').appendChild(cardElement)
+	}
+})()
 
 // Option II
 
