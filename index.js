@@ -204,20 +204,20 @@ let cards = [
 	// 	id: 'card25',
 	// 	cardFrontImage: 'images/memoryCards/headphones-solid.svg'
 	// }
-	// TODO: Reference Images attributed by Font Awesome Free License.
+	// All card images provided by Font Awesome's Free License.
 ]
 
-// Create an array for the cards currently in play.
-let cardsInPlay = []
+// TODO: Create an array for the cards currently in play.
 
-let checkForMatch = () => {
-	if (cardsInPlay[0] === cardsInPlay[1]) {
-		// leave both card backs visible.
-	} else {
-		// turn both cards over.
-	}
-	// setTimeOut(1000, checkForMatch())
-}
+// let cardsInPlay = [](
+// let checkForMatch = () => {
+// 	if (cardsInPlay[0] === cardsInPlay[1]) {
+// 		// leave both card backs visible.
+// 	} else {
+// 		// turn both cards over.
+// 	}
+// 	// setTimeOut(1000, checkForMatch())
+// }
 
 let flipCard = function() {
 	let cardId = this.getAttribute('data-id', cards[0].id) // ?[0]?
@@ -227,14 +227,16 @@ let flipCard = function() {
 		'background-color:#AD7A99; border: 1px solid; border-color:#98D2EB; svg { fill: #fff }'
 	)
 
-	if (cardsInPlay.length === 2) {
-		// checkForMatch()
-	} else {
-		console.log(cards[cardId].id)
+	// TODO: Create checkForMatch()
 
-		cardsInPlay.push(cards[cardId].id)
-		console.log(cardsInPlay)
-	}
+	// if (cardsInPlay.length === 2) {
+	// 	// checkForMatch()
+	// } else {
+	// 	console.log(cards[cardId].id)
+
+	// 	cardsInPlay.push(cards[cardId].id)
+	// 	console.log(cardsInPlay)
+	// }
 }
 
 // Create game board ✅
@@ -246,15 +248,24 @@ let createBoard = (() => {
 		cardElement.setAttribute('data-id', [i])
 		// Add onClick to each created element.
 		cardElement.addEventListener('click', flipCard)
-
 		// Append the created images to the html element gameBoard as child elements.
 		document.getElementById('gameBoard').appendChild(cardElement)
 	}
 })()
 
-let shuffleBoard = (() => {
-	
-})
+// Create a shuffleBoard() ✅
+// Fisher–Yates Shuffle Algorithm
+let carrArrayLength = cards.length - 1
+let randomIndex, tempCardArray
+
+(function shuffleBoard() {
+	for (i = carrArrayLength; i > 0; i--) {
+		randomIndex = Math.floor(Math.random() * i)
+		tempCardArray = cards[i]
+		cards[i] = cards[randomIndex]
+		cards[randomIndex] = tempCardArray
+	}
+})()
 
 // Option II
 

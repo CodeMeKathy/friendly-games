@@ -39,6 +39,7 @@ body {
 }
 
 #gameBoard {
+	display: flex;
 	margin: 0 auto;
 	flex-wrap: wrap;
 	width: 450px;
@@ -101,6 +102,28 @@ footer {
 	#gameBoard {
 		padding: 1em;
 		margin: 0.1em;
+	}
+	#right-footer {
+		text-align: right;
+	}
+	#left-footer {
+		text-align: left;
+	}
+}
+
+@media (max-width: 414px) {
+	img {
+		width: 75px;
+		height: 75px;
+		background-color: #ccfbfe;
+		border-radius: 43% 49% 48% 30% / 0% 41% 0% 47%;
+		padding: 1em; /*Consider removing*/
+	}
+	#gameBoard {
+		width: 328px;
+		padding-top: 1em;
+
+
 	}
 	#right-footer {
 		text-align: right;
