@@ -43,17 +43,22 @@ body {
 	flex-wrap: wrap;
 	width: 450px;
 	/* height: 340px; */
+	/* color: #ffffff; */
 }
+/* 
+#gameBoard:nth-child {
+	color: #ffffff;
+} */
 
 img {
 	width: 105px;
 	height: 100px;
 	background-color: #ccfbfe;
 	border-radius: 43% 49% 48% 30% / 0% 41% 0% 47%;
-	padding: 1em; /*Consider removing*/
+	padding: 1em;
 	margin: 0.2em;
 	border: 1px solid;
-	border-color:  rgb(175, 72, 154);
+	border-color: #af489a;
 }
 
 /* Footer */

@@ -103,6 +103,7 @@ let cards = [
 		id: 'card25',
 		cardFrontImage: 'images/memoryCards/headphones-solid.svg'
 	}
+	// TODO: Reference Images attributed by Font Awesome Free License.
 ]
 
 // Create an array for the cards currently in play.
@@ -120,10 +121,19 @@ let checkForMatch = () => {
 let flipCard = function() {
 	let cardId = this.getAttribute('data-id', cards[0].id) // ?[0]?
 	this.setAttribute('src', cards[cardId].cardFrontImage)
+	this.setAttribute(
+		'style',
+		'background-color:#AD7A99; border: 1px solid; border-color:#98D2EB; svg { fill: #fff }'
+	)
+
 	if (cardsInPlay.length === 2) {
 		// checkForMatch()
+	} else {
+		console.log(cards[cardId].id)
+
+		cardsInPlay.push(cards[cardId].id)
+		console.log(cardsInPlay)
 	}
-	// console.log('src')
 }
 
 // Create game board ✅
