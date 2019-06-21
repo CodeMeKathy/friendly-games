@@ -258,7 +258,7 @@ let createBoard = (() => {
 let carrArrayLength = cards.length - 1
 let randomIndex, tempCardArray
 
-(function shuffleBoard() {
+(shuffleBoard = () => {
 	for (i = carrArrayLength; i > 0; i--) {
 		randomIndex = Math.floor(Math.random() * i)
 		tempCardArray = cards[i]
