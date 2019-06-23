@@ -1,5 +1,3 @@
-// Option I
-
 // Create an array of cards with card objects ✅
 
 let cards = [
@@ -206,36 +204,77 @@ let cards = [
 	// All card images provided by Font Awesome's Free License.
 ]
 
-// TODO: Create an array for the cards currently in play.
+let flipped = false
+let firstCard, secondCard
 
-// let cardsInPlay = [](
-// let checkForMatch = () => {
-// 	if (cardsInPlay[0] === cardsInPlay[1]) {
-// 		// leave both card backs visible.
-// 	} else {
-// 		// turn both cards over.
-// 	}
-// 	// setTimeOut(1000, checkForMatch())
-// }
+// TODO: Add Function - When all eight matches are made alert('You have the memory of an elephant.  You win, Congrats!)
 
+// Check user's firstCard and secondCard matching Function
+
+// TODO: Fix card matching functionality. Note: the third card selected within the sequence (should be a new firstCard),
+// remains with cardFrontImage rendering but no longer has the `src` and has class unflipped
+let checkForMatch = () => {
+	// When firstCard and secondCard match
+
+	if (firstCard.getAttribute('src') === secondCard.getAttribute('src')) {
+		// Both cardFrontImages remain visible (flipped up) and flipCard function removed.
+
+		firstCard.removeEventListener('click', flipCard)
+		secondCard.removeEventListener('click', flipCard)
+
+		console.log('You have a match.. keep going for the WIN!')
+
+		// When firstCard and secondCard do NOT match
+	} else {
+		// console.log(firstCard)
+		// console.log(secondCard)
+		setTimeout(() => {
+			// Flip both cards back over.
+
+			firstCard.classList.replace('flipped', 'unflipped')
+			secondCard.classList.replace('flipped', 'unflipped')
+			firstCard.setAttribute('src', ' ')
+			console.log(firstCard)
+			secondCard.setAttribute('src', ' ')
+			console.log(secondCard)
+
+			firstCard.setAttribute(
+				'style',
+				'background-color:#ccfbfe; border: 1px solid; border-color:#af489a; padding: 1em'
+			)
+			secondCard.setAttribute(
+				'style',
+				'background-color:#ccfbfe; border: 1px solid; border-color:#af489a; padding: 1em'
+			)
+		}, 1500)
+	}
+	console.log(firstCard)
+	console.log(secondCard)
+}
+
+// Flip Card Function ✅
 let flipCard = function() {
-	let cardId = this.getAttribute('data-id', cards[0].id) // ?[0]?
+	let cardId = this.getAttribute('dataId', cards[0].cardFrontImage)
 	this.setAttribute('src', cards[cardId].cardFrontImage)
 	this.setAttribute(
 		'style',
 		'background-color:#AD7A99; border: 1px solid; border-color:#98D2EB; svg { fill: #fff }'
 	)
+	this.classList.add('flipped')
 
-	// TODO: Create checkForMatch()
+	if (this === firstCard) return
+	if (!flipped) {
+		flipped = true
+		firstCard = this
+		return
+	}
+	// console.log(firstCard)
+	console.log(firstCard.getAttribute('src'))
+	secondCard = this
+	// console.log(secondCard)
+	console.log(secondCard.getAttribute('src'))
 
-	// if (cardsInPlay.length === 2) {
-	// 	// checkForMatch()
-	// } else {
-	// 	console.log(cards[cardId].id)
-
-	// 	cardsInPlay.push(cards[cardId].id)
-	// 	console.log(cardsInPlay)
-	// }
+	checkForMatch()
 }
 
 // Create game board ✅
@@ -244,7 +283,7 @@ let createBoard = (() => {
 		// Create an image element for each item in the array.
 		let cardElement = document.createElement('img')
 		// Set each created image element with data attribute of `data-id`.
-		cardElement.setAttribute('data-id', [i])
+		cardElement.setAttribute('dataId', [i])
 		// Add onClick to each created element.
 		cardElement.addEventListener('click', flipCard)
 		// Append the created images to the html element gameBoard as child elements.
@@ -265,56 +304,6 @@ let randomIndex, tempCardArray
 	}
 })()
 
-// // Create resetBoard() // Executed in HTML button.
-
-// let resetBoard = () => {
-// 	for (let i = 0; i < tempCardArray; i++) {
-// 		// tempCardArray.removeAttribute('src')
-// 		// gameBoard.node.removeChild(img)
-// 		// document.getAttribute('data-id').setAttribute('src', cards[cardId].cardFrontImage)
-// 		// console.log(tempCardArray.length)
-// 		// shuffleBoard()
-
-// 	}
-// 	console.log(tempCardArray)
-// }
-
-// Option II
-
-// 1. Initialize Variables
-
-// let cards = document.querySelectorAll('memoryCard)
-// console.log(cards)
-
-// let isCardFlipped = false
-// let firstCard
-// let secondCard
-
-//  etc ...
-
-// create an array of cards
-
-// Assign a random number dataset.
-// let id = randomly assigned #
-// Use temperate literals to appended to the id in html.
-
-// take array cards and shuffle them randomly using math.Number()
-
-// Take newly created array and display
-
-// shuffleBoard() { //IIFE
-
-// }
-
-// function flipCard() {
-//  if (firstCard.onClick === false)
-// }
-// if onClick
-
-// first card selection
-// check to see if the dataAtt is the same  dataAtt === dataAtt; if so then secondCard != selected card.
-
-// function cardFlipped() {
-// let card = .memoryCard
-// when .memoryCard is clicked check to see if there is already a firstCard.  If not, assign .this to firstCard and display card using `backface-visibility`.  Else assign .this to secondCard and display card using `backface-visibility`.
-// }
+// References:
+// * Fisher–Yates Shuffle Algorithm
+// * Marina Ferreira: https://marina-ferreira.github.io/projects/js/memory-game/
