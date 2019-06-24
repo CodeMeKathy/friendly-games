@@ -211,6 +211,12 @@ let firstCard, secondCard
 
 let matchedCards = []
 
+let alertWin = () => {
+	if (matchedCards.length === 16) {
+		alert('You did it.  You WIN!! \n Press the New Game Button to play again.')
+	}
+}
+
 // Reset both the firstCard and secondCard
 
 let resetCards = (firstCard, secondCard) => {
@@ -232,7 +238,7 @@ let resetCards = (firstCard, secondCard) => {
 			'style',
 			'background-color:#ccfbfe; border: 1px solid; border-color:#af489a; padding: 1em'
 		)
-	}, 1000)
+	}, 900)
 }
 
 // Check user's firstCard and secondCard matching Function
@@ -248,6 +254,8 @@ let checkForMatch = () => {
 		firstCard.removeEventListener('click', flipCard)
 		secondCard.removeEventListener('click', flipCard)
 
+		matchedCards.push(firstCard.getAttribute('id'))
+		matchedCards.push(secondCard.getAttribute('id'))
 		// alert('You found a match.. keep going to find them all, for the WIN!')
 
 		// When firstCard and secondCard do NOT match
@@ -259,6 +267,7 @@ let checkForMatch = () => {
 	flipped = false
 	console.log(firstCard)
 	console.log(secondCard)
+	alertWin()
 }
 
 // Flip Card Function ✅
