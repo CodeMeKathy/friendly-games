@@ -214,7 +214,7 @@ let matchedCards = []
 let alertWin = () => {
 	if (matchedCards.length === 16) {
 		alert(
-			'You have the memory of an elephant.  You WIN!! \n Press the New Game Button to play again.'
+			'Congrats you have the memory of an elephant! \n Press the New Game Button to play again.'
 		)
 	}
 }
