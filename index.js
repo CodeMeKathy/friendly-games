@@ -209,6 +209,9 @@ let firstCard, secondCard
 
 // TODO: Add Function - When all eight matches are made alert('You have the memory of an elephant.  You win, Congrats!)
 
+// Array of matched cards.
+let matchedCards = []
+
 // Check user's firstCard and secondCard matching Function
 
 // TODO: Fix card matching functionality. Note: the third card selected within the sequence (should be a new firstCard),
@@ -219,9 +222,15 @@ let checkForMatch = () => {
 	if (firstCard.getAttribute('src') === secondCard.getAttribute('src')) {
 		// Both cardFrontImages remain visible (flipped up) and flipCard function removed.
 
-		firstCard.removeEventListener('click', flipCard)
-		secondCard.removeEventListener('click', flipCard)
+		// firstCard.removeEventListener('click', flipCard)
+		firstCard.classList.replace('flipped', 'match')
 
+		// secondCard.removeEventListener('click', flipCard)
+		secondCard.classList.replace('flipped', 'match')
+
+		matchedCards.push(firstCard.getAttribute('id'))
+		matchedCards.push(secondCard.getAttribute('id'))
+		console.log('Number of matching cards' + matchedCards.length)
 		alert('You have a match.. keep going for the WIN!')
 
 		// When firstCard and secondCard do NOT match
@@ -230,50 +239,61 @@ let checkForMatch = () => {
 		// console.log(secondCard)
 		setTimeout(() => {
 			// Flip both cards back over.
-
-			firstCard.classList.replace('flipped', 'unflipped')
-			secondCard.classList.replace('flipped', 'unflipped')
-			firstCard.setAttribute('src', ' ')
 			console.log(firstCard)
-			secondCard.setAttribute('src', ' ')
-			console.log(secondCard)
-
+			firstCard.setAttribute('src', ' ')
+			firstCard.classList.replace('flipped', 'unflipped')
+			console.log(firstCard)
 			firstCard.setAttribute(
 				'style',
 				'background-color:#ccfbfe; border: 1px solid; border-color:#af489a; padding: 1em'
 			)
+			console.log(firstCard)
+
+			console.log(secondCard)
+			secondCard.setAttribute('src', ' ')
+			secondCard.classList.replace('flipped', 'unflipped')
+			console.log(secondCard)
+
 			secondCard.setAttribute(
 				'style',
 				'background-color:#ccfbfe; border: 1px solid; border-color:#af489a; padding: 1em'
 			)
-		}, 1200)
+			console.log(secondCard)
+			
+		}, 1000)
 	}
-	console.log(firstCard)
-	console.log(secondCard)
+	// console.log(firstCard)
+	// console.log(secondCard)
 }
 
-// Flip Card Function ✅
+// TODO: Clean up function & find error; break-down
+// Flip Card Function
 let flipCard = function() {
 	let cardId = this.getAttribute('dataId', cards[0].cardFrontImage)
 	this.setAttribute('src', cards[cardId].cardFrontImage)
-	this.setAttribute(
-		'style',
-		'background-color:#AD7A99; border: 1px solid; border-color:#98D2EB; svg { fill: #fff }'
-	)
-	this.classList.add('flipped')
+	this.setAttribute('style', 'background-color:#AD7A99; border: 1px solid; border-color:#98D2EB')
 
-	if (this === firstCard) return
+	// if (this === firstCard) return
+
 	if (!flipped) {
 		flipped = true
+		this.classList.add('flipped')
 		firstCard = this
+		firstCard.removeEventListener('click', flipCard)
+		console.log('firstCard assigned to: ' + firstCard.getAttribute('src'))
 		return
-	}
-	// console.log(firstCard)
-	console.log(firstCard.getAttribute('src'))
-	secondCard = this
-	// console.log(secondCard)
-	console.log(secondCard.getAttribute('src'))
+	} else {
+		secondCard = this
+		this.classList.add('flipped')
+		secondCard.removeEventListener('click', flipCard)
+		console.log('secondCard assigned to: ' + secondCard.getAttribute('src'))
 
+		// // console.log(firstCard)
+		// console.log(firstCard.getAttribute('src'))
+		// // console.log(secondCard)
+		// console.log(secondCard.getAttribute('src'))
+	}
+	console.log('beginning checkForMatch()')
 	checkForMatch()
 }
 

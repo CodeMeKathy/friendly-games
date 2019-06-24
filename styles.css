@@ -139,6 +139,9 @@ footer {
 		width: 375px;
 		padding: 1em;
 	}
+	footer {
+		height: 5em;
+	}
 	#right-footer {
 		text-align: right;
 	}
