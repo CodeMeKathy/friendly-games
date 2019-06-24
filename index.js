@@ -207,13 +207,13 @@ let cards = [
 let flipped = false
 let firstCard, secondCard
 
-// TODO: Add Function - When all eight matches are made alert('You have the memory of an elephant.  You win, Congrats!)
+// alert('You have the memory of an elephant.  You win, Congrats!) when all eight matches are made 
 
 let matchedCards = []
 
 let alertWin = () => {
 	if (matchedCards.length === 16) {
-		alert('You did it.  You WIN!! \n Press the New Game Button to play again.')
+		alert('You have the memory of an elephant.  You WIN!! \n Press the New Game Button to play again.')
 	}
 }
 
