@@ -222,7 +222,7 @@ let checkForMatch = () => {
 		firstCard.removeEventListener('click', flipCard)
 		secondCard.removeEventListener('click', flipCard)
 
-		console.log('You have a match.. keep going for the WIN!')
+		alert('You have a match.. keep going for the WIN!')
 
 		// When firstCard and secondCard do NOT match
 	} else {
@@ -246,7 +246,7 @@ let checkForMatch = () => {
 				'style',
 				'background-color:#ccfbfe; border: 1px solid; border-color:#af489a; padding: 1em'
 			)
-		}, 1500)
+		}, 1200)
 	}
 	console.log(firstCard)
 	console.log(secondCard)

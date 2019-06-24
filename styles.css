@@ -100,6 +100,30 @@ footer {
 
 /* Media Queries */
 
+@media (min-width: 360px) {
+	img {
+		width: 60px !important;
+		height: 60px !important;
+		background-color: #ccfbfe;
+		border-radius: 43% 49% 48% 30% / 0% 41% 0% 47%;
+		padding: 1em; /*Consider removing*/
+	}
+	#gameBoardWrapper {
+		width: 298px;
+		margin: 0 auto;
+	}
+	#gameBoard {
+		width: 305px;
+		padding: 1em;
+	}
+	#right-footer {
+		text-align: right;
+	}
+	#left-footer {
+		text-align: left;
+	}
+}
+
 @media (min-width: 375px) {
 	img {
 		width: 75px !important;
@@ -148,4 +172,3 @@ footer {
 		text-align: left;
 	}
 }
-
