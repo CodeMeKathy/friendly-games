@@ -1,4 +1,4 @@
-// Create an array of cards with card objects ✅
+// Create an array of cards with card objects
 
 let cards = [
 	{
@@ -207,13 +207,15 @@ let cards = [
 let flipped = false
 let firstCard, secondCard
 
-// alert('You have the memory of an elephant.  You win, Congrats!) when all eight matches are made 
+// alert('You have the memory of an elephant.  You win, Congrats!) when all eight matches are made
 
 let matchedCards = []
 
 let alertWin = () => {
 	if (matchedCards.length === 16) {
-		alert('You have the memory of an elephant.  You WIN!! \n Press the New Game Button to play again.')
+		alert(
+			'You have the memory of an elephant.  You WIN!! \n Press the New Game Button to play again.'
+		)
 	}
 }
 
@@ -270,7 +272,7 @@ let checkForMatch = () => {
 	alertWin()
 }
 
-// Flip Card Function ✅
+// Flip Card Function
 let flipCard = function() {
 	let cardId = this.getAttribute('dataId', cards[0].cardFrontImage)
 	this.setAttribute('src', cards[cardId].cardFrontImage)
@@ -295,7 +297,7 @@ let flipCard = function() {
 	checkForMatch()
 }
 
-// Create game board ✅
+// Create game board
 let createBoard = (() => {
 	for (let i = 0; i < 16; i++) {
 		// Create an image element for each item in the array.
@@ -309,7 +311,7 @@ let createBoard = (() => {
 	}
 })()
 
-// Create a shuffleBoard() ✅
+// Create a shuffleBoard()
 // Fisher–Yates Shuffle Algorithm
 let cardArrayLength = cards.length - 1
 let randomIndex, tempCardArray
