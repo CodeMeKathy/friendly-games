@@ -11,11 +11,11 @@ Designed and implemented by Kathy Lambert.
 
 ### Requirements
 
-[✅] Create a browser-based card matching game that presents the player with cards arranged in a 4x4 grid.
-[✅] Ensure card back has a common design  and card front contains a distinctive symbol shared by one pair of cards.
-[✅] Selecting two cards with different symbols will result in both flipped back over, obscuring their  symbols.
-[✅] Selecting two cards whose symbols match, along with those successfully matched in previous turns, will remain flipped up.
-[✅] Include a 'New Game' button to reset the game board.
+* [✅] Create a browser-based card matching game that presents the player with cards arranged in a 4x4 grid.
+* [✅] Ensure card back has a common design  and card front contains a distinctive symbol shared by one pair of cards.
+* [✅] Selecting two cards with different symbols will result in both flipped back over, obscuring their  symbols.
+* [✅] Selecting two cards whose symbols match, along with those successfully matched in previous turns, will remain flipped up.
+* [✅] Include a 'New Game' button to reset the game board.
 
 ### Built With
 
