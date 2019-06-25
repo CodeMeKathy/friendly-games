@@ -5,202 +5,67 @@ let cards = [
 		id: 'card1',
 		cardFrontImage: 'assets/images/memoryCards/accessible-icon-brands.svg'
 	},
-	// {
-	// 	id: 'card2',
-	// 	cardFrontImage: 'assets/images/memoryCards/angrycreative-brands.svg'
-	// },
-	// {
-	// 	id: 'card3',
-	// 	cardFrontImage: 'assets/images/memoryCards/asterisk-solid.svg'
-	// },
 	{
-		id: 'card4',
+		id: 'card2',
 		cardFrontImage: 'assets/images/memoryCards/balance-scale-right-solid.svg'
 	},
-	// {
-	// 	id: 'card5',
-	// 	cardFrontImage: 'assets/images/memoryCards/brain-solid.svg'
-	// },
-	// {
-	// 	id: 'card6',
-	// 	cardFrontImage: 'assets/images/memoryCards/cloud-sun-rain-solid.svg'
-	// },
 	{
-		id: 'card7',
+		id: 'card3',
 		cardFrontImage: 'assets/images/memoryCards/cocktail-solid.svg'
 	},
 	{
-		id: 'card8',
+		id: 'card4',
 		cardFrontImage: 'assets/images/memoryCards/heart-solid.svg'
 	},
-	// {
-	// 	id: 'card9',
-	// 	cardFrontImage: 'assets/images/memoryCards/icons-solid.svg'
-	// },
+
 	{
-		id: 'card10',
+		id: 'card5',
 		cardFrontImage: 'assets/images/memoryCards/praying-hands-solid.svg'
 	},
-	// {
-	// 	id: 'card11',
-	// 	cardFrontImage: 'assets/images/memoryCards/lemon-regular.svg'
-	// },
-	// {
-	// 	id: 'card12',
-	// 	cardFrontImage: 'assets/images/memoryCards/hiking-solid.svg'
-	// },
-	// {
-	// 	id: 'card13',
-	// 	cardFrontImage: 'assets/images/memoryCards/cannabis-solid.svg'
-	// },
-	// {
-	// 	id: 'card14',
-	// 	cardFrontImage: 'assets/images/memoryCards/pepper-hot-solid.svg'
-	// },
-	// {
-	// 	id: 'card15',
-	// 	cardFrontImage: 'assets/images/memoryCards/passport-solid.svg'
-	// },
 	{
-		id: 'card16',
+		id: 'card6',
 		cardFrontImage: 'assets/images/memoryCards/code-solid.svg'
 	},
 	{
-		id: 'card17',
+		id: 'card7',
 		cardFrontImage: 'assets/images/memoryCards/coffee-solid.svg'
 	},
-	// {
-	// 	id: 'card18',
-	// 	cardFrontImage: 'assets/images/memoryCards/dev-brands.svg'
-	// },
-	// {
-	// 	id: 'card19',
-	// 	cardFrontImage: 'assets/images/memoryCards/door-open-solid.svg'
-	// },
-	// {
-	// 	id: 'card20',
-	// 	cardFrontImage: 'assets/images/memoryCards/female-solid.svg'
-	// },
-	// {
-	// 	id: 'card21',
-	// 	cardFrontImage: 'assets/images/memoryCards/free-code-camp-brands.svg'
-	// },
 	{
-		id: 'card22',
+		id: 'card8',
 		cardFrontImage: 'assets/images/memoryCards/gem-regular.svg'
 	},
-	// {
-	// 	id: 'card23',
-	// 	cardFrontImage: 'assets/images/github-brands.svg'
-	// },
-	// {
-	// 	id: 'card24',
-	// 	cardFrontImage: 'assets/images/memoryCards/glass-martini-alt-solid'
-	// },
-	// {
-	// 	id: 'card25',
-	// 	cardFrontImage: 'assets/images/memoryCards/headphones-solid.svg'
-	// },
 	{
-		id: 'card1',
+		id: 'card9',
 		cardFrontImage: 'assets/images/memoryCards/accessible-icon-brands.svg'
 	},
-	// {
-	// 	id: 'card2',
-	// 	cardFrontImage: 'assets/images/memoryCards/angrycreative-brands.svg'
-	// },
-	// {
-	// 	id: 'card3',
-	// 	cardFrontImage: 'assets/images/memoryCards/asterisk-solid.svg'
-	// },
 	{
-		id: 'card4',
+		id: 'card10',
 		cardFrontImage: 'assets/images/memoryCards/balance-scale-right-solid.svg'
 	},
-	// {
-	// 	id: 'card5',
-	// 	cardFrontImage: 'assets/images/memoryCards/brain-solid.svg'
-	// },
-	// {
-	// 	id: 'card6',
-	// 	cardFrontImage: 'assets/images/memoryCards/cloud-sun-rain-solid.svg'
-	// },
 	{
-		id: 'card7',
+		id: 'card11',
 		cardFrontImage: 'assets/images/memoryCards/cocktail-solid.svg'
 	},
 	{
-		id: 'card8',
+		id: 'card12',
 		cardFrontImage: 'assets/images/memoryCards/heart-solid.svg'
 	},
-	// {
-	// 	id: 'card9',
-	// 	cardFrontImage: 'assets/images/memoryCards/icons-solid.svg'
-	// },
 	{
-		id: 'card10',
+		id: 'card13',
 		cardFrontImage: 'assets/images/memoryCards/praying-hands-solid.svg'
 	},
-	// {
-	// 	id: 'card11',
-	// 	cardFrontImage: 'assets/images/memoryCards/lemon-regular.svg'
-	// },
-	// {
-	// 	id: 'card12',
-	// 	cardFrontImage: 'assets/images/memoryCards/hiking-solid.svg'
-	// },
-	// {
-	// 	id: 'card13',
-	// 	cardFrontImage: 'assets/images/memoryCards/cannabis-solid.svg'
-	// },
-	// {
-	// 	id: 'card14',
-	// 	cardFrontImage: 'assets/images/memoryCards/pepper-hot-solid.svg'
-	// },
-	// {
-	// 	id: 'card15',
-	// 	cardFrontImage: 'assets/images/memoryCards/passport-solid.svg'
-	// },
 	{
-		id: 'card16',
+		id: 'card14',
 		cardFrontImage: 'assets/images/memoryCards/code-solid.svg'
 	},
 	{
-		id: 'card17',
+		id: 'card15',
 		cardFrontImage: 'assets/images/memoryCards/coffee-solid.svg'
 	},
-	// {
-	// 	id: 'card18',
-	// 	cardFrontImage: 'assets/images/memoryCards/dev-brands.svg'
-	// },
-	// {
-	// 	id: 'card19',
-	// 	cardFrontImage: 'assets/images/memoryCards/door-open-solid.svg'
-	// },
-	// {
-	// 	id: 'card20',
-	// 	cardFrontImage: 'assets/images/memoryCards/female-solid.svg'
-	// },
-	// {
-	// 	id: 'card21',
-	// 	cardFrontImage: 'assets/images/memoryCards/free-code-camp-brands.svg'
-	// },
 	{
-		id: 'card22',
+		id: 'card16',
 		cardFrontImage: 'assets/images/memoryCards/gem-regular.svg'
 	}
-	// {
-	// 	id: 'card23',
-	// 	cardFrontImage: 'assets/images/github-brands.svg'
-	// },
-	// {
-	// 	id: 'card24',
-	// 	cardFrontImage: 'assets/images/memoryCards/glass-martini-alt-solid'
-	// },
-	// {
-	// 	id: 'card25',
-	// 	cardFrontImage: 'assets/images/memoryCards/headphones-solid.svg'
-	// }
 	// All card images provided by Font Awesome's glorious Free License.  Thank you for giving back.
 ]
 
@@ -213,7 +78,9 @@ let matchedCards = []
 
 let alertWin = () => {
 	if (matchedCards.length === 16) {
-		alert('Congrats; you have the memory of an elephant!\nPress the New Game button to play again.\nThanks for playing')
+		alert(
+			'Congrats; you have the memory of an elephant!\nPress the New Game button to play again.\nThanks for playing'
+		)
 	}
 }
 
@@ -226,9 +93,7 @@ let resetCards = (firstCard, secondCard) => {
 		firstCard.classList.replace('flipped', 'unflipped')
 		secondCard.classList.replace('flipped', 'unflipped')
 		firstCard.setAttribute('src', ' ')
-		// console.log(firstCard)
 		secondCard.setAttribute('src', ' ')
-		// console.log(secondCard)
 
 		firstCard.setAttribute(
 			'style',
@@ -263,8 +128,6 @@ let checkForMatch = () => {
 	firstCard = null
 	secondCard = null
 	flipped = false
-	// console.log(firstCard)
-	// console.log(secondCard)
 	alertWin()
 }
 
@@ -284,12 +147,7 @@ let flipCard = function() {
 		firstCard = this
 		return
 	}
-	// console.log(firstCard)
-	// console.log(firstCard.getAttribute('src'))
 	secondCard = this
-	// console.log(secondCard)
-	// console.log(secondCard.getAttribute('src'))
-
 	checkForMatch()
 }
 
