@@ -1,54 +1,128 @@
-# Repository Template
+# CodeMeKathy's Memory Game
+`Live:` https://KathyLambert.me/friendly-games
 
-> A template for creating new @CodeMeKathy repositories
+A Chingu pre-work Voyage 10 Tier 2 Front-end project. Engineered with HTML, CSS, Javascript with Font Awesome and Bootstrap libraries. Chingu is a global collaboration platform and coding cohort generator. Where developers, designers, digital Marketers, and data Scientists are connected with motivated learners possessing shared goals to learn, help and build together!
 
-This repository is meant to serve as a general template for how to set up new CodeMeKathy repositories. In general, setting up a new repository should take only a few minutes; use this repository as a way of finding example files, and use the following checklist to ensure that you've set up the repository correctly.
+## Overview
+----
+Designed and implemented by Kathy Lambert.
 
-## Install
+[![overview](https://github.com/CodeMeKathy/cmk-dev-happiness/blob/master/assets/GitHub%20Social%20Preview%20Small.png?raw=true "overview")](https://github.com/CodeMeKathy/cmk-dev-happiness/blob/master/assets/GitHub%20Social%20Preview%20Small.png?raw=true "overview")
 
-These instructions are basic; you can use any method to do this work. The important part is making sure that you follow the checklist below before publishing the repository.
+### Requirements
 
-```sh
+[✅] Create a browser-based card matching game that presents the player with cards arranged in a 4x4 grid.
+[✅] Ensure card back has a common design  and card front contains a distinctive symbol shared by one pair of cards.
+[✅] Selecting two cards with different symbols will result in both flipped back over, obscuring their  symbols.
+[✅] Selecting two cards whose symbols match, along with those successfully matched in previous turns, will remain flipped up.
+[✅] Include a 'New Game' button to reset the game board.
 
+### Built With
+
+* [Bootstrapped](https://getbootstrap.com) 
+* [Font Awesome](https://fontawesome.com/how-to-use/on-the-web/using-with/react)
+
+
+## Goals
+---
+
+* [ ] Add Game Timer - A timer displaying the number of minutes and seconds that have elapsed. The timer is stopped when the player wins the game.
+* [ ] Add Move Counter - A counter that displays the number of turns the player has taken, starting with one at the first turn.
+
+## Project Status
+---
+
+The game is deployed, live and awaiting users to test their memories.  Future additions will include the above mentioned goals.
+
+## Getting Started
+
+Clone or download the [repository](https://github.com/CodeMeKathy/<Replace Repo>). This project was [bootstrapped](https://getbootstrap.com) with [Create React App](https://github.com/facebook/create-react-app) and enhanced with [Font Awesome](https://fontawesome.com/how-to-use/on-the-web/using-with/react) React components.  In order to successfully run the project, as intended, locally all items are needed installed.
+
+### Prerequisites
+
+Either `npm`, `node` (or optionally, `yarn`) are needed installed globally on your machine.  
+
+### Installation and Setup Instructions
+---
+
+**Using `npm`:**  
+1. Clone or download repository  
+2. Install project dependencies run: `npm install`
+3. Start Server: `npm run start`
+4. Visit local copy of the project: `localhost:3000`
+
+**Using `yarn`:**  
+1. Clone or download repository  
+2. Install project dependencies run:`yarn install`  
+3. Start Server: `yarn start`   
+4. Visit local copy of the project: `localhost:3000` 
+
+## Deployment
+
+**Using `npm`:**  
+1. Run pre-deployment build with `npm predeploy`
+2. Build with `npm run deploy`  
+4. Deploy `/build` with any tool or service to hosting company that supports static sites  
+
+**Using `yarn`:**  
+1. Run pre-deployment build with `yarn predeploy`
+2. Build with `yarn run deploy`  
+4. Deploy `/build` with any tool or service to hosting company that supports static sites 
+
+Visit the [deployed project](https://kathylambert.me/<Replace Repo>) deployed with GitHub pages.
+
+These instructions will guide one in obtaining a copy of the project on a local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+
+## Features & Code Snippets
+---
+
+* Fully responsive ...
+* Uses ...
+  
+[ PRETEND SCREEN SHOT IS HERE ]
+[ PRETEND OTHER SCREEN SHOT IS HERE ]  
+
+#### Responsiveness:
+---
+
+The website is fully responsive thanks to `<Replace Tech>`.
+
+[![<Replace Feature>](https:// "<Replace Feature>")](https:// "<Replace Feature>")
+
+
+#### <Replace Feature>:
+---
+Feature Description ... 
+
+[![<Replace Feature> ](https:// "<Replace Feature> ")](https:// "Replace Feature")
+
+###### Closer look:
+
+[![<Replace Feature>](https:// "<Replace Feature>")](https:// "<Replace Feature>")
+
+
+#### <Replace Feature>:
+---
+Feature Description ... 
+
+[![<Replace Feature> ](https:// "<Replace Feature>")](https:// "Replace Feature")
+
+## Package Dependencies:
+
+```json
+"devDependencies": {
+
+  }
 ```
 
-## ✅ Checklist ✅
+## Handy Scripts:
 
-Go through this checklist after creating your repository.
+```json
+  "scripts": {
 
-### README
-
-- [ ] Copy `example-README.md` from this repository to your directory.
-- [ ] Rename all instances of `<Replace Title>` in README to match the new repo title
-- [ ] Manually go through and edit the rest of the README file.
-
-### Dotfiles
-
-- [ ] Do you need a `.gitignore` file?
-- [ ] Do you need an `.npmignore` file?
-
-### License ?
-
-- [ ] Copy the MIT license from the example repo.
-- [ ] Have you added `MIT` as the license in the `package.json`?
-- [ ] If you made changes, were these reflected in the last section of the README?
-
-### GitHub Metadata
-
-- [ ] Have you added a short description to the repository?
-  - [ ] Is the description matched in the byline under the title in the README?
-- [ ] Have you added topics to the GitHub repository?
-  - [ ] Have you added these topics as keywords in the `package.json`?
-
-### `package.json`
-
-- [ ] Is the `author` field correct?
-- [ ] Have you added `keywords`?
-- [ ] Are the `bugs` and `homepage` fields correct?
-- [ ] Have you added tests? Are they matched, here?
-
-
+  }
+```
 
 ## License
 
-[MIT](LICENSE) © 2018 CodeMeKathy | Kathy Lambert
+[MIT](LICENSE) © 2019 CodeMeKathy | Kathy Lambert

@@ -3,205 +3,205 @@
 let cards = [
 	{
 		id: 'card1',
-		cardFrontImage: 'images/memoryCards/accessible-icon-brands.svg'
+		cardFrontImage: 'assets/images/memoryCards/accessible-icon-brands.svg'
 	},
 	// {
 	// 	id: 'card2',
-	// 	cardFrontImage: 'images/memoryCards/angrycreative-brands.svg'
+	// 	cardFrontImage: 'assets/images/memoryCards/angrycreative-brands.svg'
 	// },
 	// {
 	// 	id: 'card3',
-	// 	cardFrontImage: 'images/memoryCards/asterisk-solid.svg'
+	// 	cardFrontImage: 'assets/images/memoryCards/asterisk-solid.svg'
 	// },
 	{
 		id: 'card4',
-		cardFrontImage: 'images/memoryCards/balance-scale-right-solid.svg'
+		cardFrontImage: 'assets/images/memoryCards/balance-scale-right-solid.svg'
 	},
 	// {
 	// 	id: 'card5',
-	// 	cardFrontImage: 'images/memoryCards/brain-solid.svg'
+	// 	cardFrontImage: 'assets/images/memoryCards/brain-solid.svg'
 	// },
 	// {
 	// 	id: 'card6',
-	// 	cardFrontImage: 'images/memoryCards/cloud-sun-rain-solid.svg'
+	// 	cardFrontImage: 'assets/images/memoryCards/cloud-sun-rain-solid.svg'
 	// },
 	{
 		id: 'card7',
-		cardFrontImage: 'images/memoryCards/cocktail-solid.svg'
+		cardFrontImage: 'assets/images/memoryCards/cocktail-solid.svg'
 	},
 	{
 		id: 'card8',
-		cardFrontImage: 'images/memoryCards/heart-solid.svg'
+		cardFrontImage: 'assets/images/memoryCards/heart-solid.svg'
 	},
 	// {
 	// 	id: 'card9',
-	// 	cardFrontImage: 'images/memoryCards/icons-solid.svg'
+	// 	cardFrontImage: 'assets/images/memoryCards/icons-solid.svg'
 	// },
 	{
 		id: 'card10',
-		cardFrontImage: 'images/memoryCards/praying-hands-solid.svg'
+		cardFrontImage: 'assets/images/memoryCards/praying-hands-solid.svg'
 	},
 	// {
 	// 	id: 'card11',
-	// 	cardFrontImage: 'images/memoryCards/lemon-regular.svg'
+	// 	cardFrontImage: 'assets/images/memoryCards/lemon-regular.svg'
 	// },
 	// {
 	// 	id: 'card12',
-	// 	cardFrontImage: 'images/memoryCards/hiking-solid.svg'
+	// 	cardFrontImage: 'assets/images/memoryCards/hiking-solid.svg'
 	// },
 	// {
 	// 	id: 'card13',
-	// 	cardFrontImage: 'images/memoryCards/cannabis-solid.svg'
+	// 	cardFrontImage: 'assets/images/memoryCards/cannabis-solid.svg'
 	// },
 	// {
 	// 	id: 'card14',
-	// 	cardFrontImage: 'images/memoryCards/pepper-hot-solid.svg'
+	// 	cardFrontImage: 'assets/images/memoryCards/pepper-hot-solid.svg'
 	// },
 	// {
 	// 	id: 'card15',
-	// 	cardFrontImage: 'images/memoryCards/passport-solid.svg'
+	// 	cardFrontImage: 'assets/images/memoryCards/passport-solid.svg'
 	// },
 	{
 		id: 'card16',
-		cardFrontImage: 'images/memoryCards/code-solid.svg'
+		cardFrontImage: 'assets/images/memoryCards/code-solid.svg'
 	},
 	{
 		id: 'card17',
-		cardFrontImage: 'images/memoryCards/coffee-solid.svg'
+		cardFrontImage: 'assets/images/memoryCards/coffee-solid.svg'
 	},
 	// {
 	// 	id: 'card18',
-	// 	cardFrontImage: 'images/memoryCards/dev-brands.svg'
+	// 	cardFrontImage: 'assets/images/memoryCards/dev-brands.svg'
 	// },
 	// {
 	// 	id: 'card19',
-	// 	cardFrontImage: 'images/memoryCards/door-open-solid.svg'
+	// 	cardFrontImage: 'assets/images/memoryCards/door-open-solid.svg'
 	// },
 	// {
 	// 	id: 'card20',
-	// 	cardFrontImage: 'images/memoryCards/female-solid.svg'
+	// 	cardFrontImage: 'assets/images/memoryCards/female-solid.svg'
 	// },
 	// {
 	// 	id: 'card21',
-	// 	cardFrontImage: 'images/memoryCards/free-code-camp-brands.svg'
+	// 	cardFrontImage: 'assets/images/memoryCards/free-code-camp-brands.svg'
 	// },
 	{
 		id: 'card22',
-		cardFrontImage: 'images/memoryCards/gem-regular.svg'
+		cardFrontImage: 'assets/images/memoryCards/gem-regular.svg'
 	},
 	// {
 	// 	id: 'card23',
-	// 	cardFrontImage: 'images/github-brands.svg'
+	// 	cardFrontImage: 'assets/images/github-brands.svg'
 	// },
 	// {
 	// 	id: 'card24',
-	// 	cardFrontImage: 'images/memoryCards/glass-martini-alt-solid'
+	// 	cardFrontImage: 'assets/images/memoryCards/glass-martini-alt-solid'
 	// },
 	// {
 	// 	id: 'card25',
-	// 	cardFrontImage: 'images/memoryCards/headphones-solid.svg'
+	// 	cardFrontImage: 'assets/images/memoryCards/headphones-solid.svg'
 	// },
 	{
 		id: 'card1',
-		cardFrontImage: 'images/memoryCards/accessible-icon-brands.svg'
+		cardFrontImage: 'assets/images/memoryCards/accessible-icon-brands.svg'
 	},
 	// {
 	// 	id: 'card2',
-	// 	cardFrontImage: 'images/memoryCards/angrycreative-brands.svg'
+	// 	cardFrontImage: 'assets/images/memoryCards/angrycreative-brands.svg'
 	// },
 	// {
 	// 	id: 'card3',
-	// 	cardFrontImage: 'images/memoryCards/asterisk-solid.svg'
+	// 	cardFrontImage: 'assets/images/memoryCards/asterisk-solid.svg'
 	// },
 	{
 		id: 'card4',
-		cardFrontImage: 'images/memoryCards/balance-scale-right-solid.svg'
+		cardFrontImage: 'assets/images/memoryCards/balance-scale-right-solid.svg'
 	},
 	// {
 	// 	id: 'card5',
-	// 	cardFrontImage: 'images/memoryCards/brain-solid.svg'
+	// 	cardFrontImage: 'assets/images/memoryCards/brain-solid.svg'
 	// },
 	// {
 	// 	id: 'card6',
-	// 	cardFrontImage: 'images/memoryCards/cloud-sun-rain-solid.svg'
+	// 	cardFrontImage: 'assets/images/memoryCards/cloud-sun-rain-solid.svg'
 	// },
 	{
 		id: 'card7',
-		cardFrontImage: 'images/memoryCards/cocktail-solid.svg'
+		cardFrontImage: 'assets/images/memoryCards/cocktail-solid.svg'
 	},
 	{
 		id: 'card8',
-		cardFrontImage: 'images/memoryCards/heart-solid.svg'
+		cardFrontImage: 'assets/images/memoryCards/heart-solid.svg'
 	},
 	// {
 	// 	id: 'card9',
-	// 	cardFrontImage: 'images/memoryCards/icons-solid.svg'
+	// 	cardFrontImage: 'assets/images/memoryCards/icons-solid.svg'
 	// },
 	{
 		id: 'card10',
-		cardFrontImage: 'images/memoryCards/praying-hands-solid.svg'
+		cardFrontImage: 'assets/images/memoryCards/praying-hands-solid.svg'
 	},
 	// {
 	// 	id: 'card11',
-	// 	cardFrontImage: 'images/memoryCards/lemon-regular.svg'
+	// 	cardFrontImage: 'assets/images/memoryCards/lemon-regular.svg'
 	// },
 	// {
 	// 	id: 'card12',
-	// 	cardFrontImage: 'images/memoryCards/hiking-solid.svg'
+	// 	cardFrontImage: 'assets/images/memoryCards/hiking-solid.svg'
 	// },
 	// {
 	// 	id: 'card13',
-	// 	cardFrontImage: 'images/memoryCards/cannabis-solid.svg'
+	// 	cardFrontImage: 'assets/images/memoryCards/cannabis-solid.svg'
 	// },
 	// {
 	// 	id: 'card14',
-	// 	cardFrontImage: 'images/memoryCards/pepper-hot-solid.svg'
+	// 	cardFrontImage: 'assets/images/memoryCards/pepper-hot-solid.svg'
 	// },
 	// {
 	// 	id: 'card15',
-	// 	cardFrontImage: 'images/memoryCards/passport-solid.svg'
+	// 	cardFrontImage: 'assets/images/memoryCards/passport-solid.svg'
 	// },
 	{
 		id: 'card16',
-		cardFrontImage: 'images/memoryCards/code-solid.svg'
+		cardFrontImage: 'assets/images/memoryCards/code-solid.svg'
 	},
 	{
 		id: 'card17',
-		cardFrontImage: 'images/memoryCards/coffee-solid.svg'
+		cardFrontImage: 'assets/images/memoryCards/coffee-solid.svg'
 	},
 	// {
 	// 	id: 'card18',
-	// 	cardFrontImage: 'images/memoryCards/dev-brands.svg'
+	// 	cardFrontImage: 'assets/images/memoryCards/dev-brands.svg'
 	// },
 	// {
 	// 	id: 'card19',
-	// 	cardFrontImage: 'images/memoryCards/door-open-solid.svg'
+	// 	cardFrontImage: 'assets/images/memoryCards/door-open-solid.svg'
 	// },
 	// {
 	// 	id: 'card20',
-	// 	cardFrontImage: 'images/memoryCards/female-solid.svg'
+	// 	cardFrontImage: 'assets/images/memoryCards/female-solid.svg'
 	// },
 	// {
 	// 	id: 'card21',
-	// 	cardFrontImage: 'images/memoryCards/free-code-camp-brands.svg'
+	// 	cardFrontImage: 'assets/images/memoryCards/free-code-camp-brands.svg'
 	// },
 	{
 		id: 'card22',
-		cardFrontImage: 'images/memoryCards/gem-regular.svg'
+		cardFrontImage: 'assets/images/memoryCards/gem-regular.svg'
 	}
 	// {
 	// 	id: 'card23',
-	// 	cardFrontImage: 'images/github-brands.svg'
+	// 	cardFrontImage: 'assets/images/github-brands.svg'
 	// },
 	// {
 	// 	id: 'card24',
-	// 	cardFrontImage: 'images/memoryCards/glass-martini-alt-solid'
+	// 	cardFrontImage: 'assets/images/memoryCards/glass-martini-alt-solid'
 	// },
 	// {
 	// 	id: 'card25',
-	// 	cardFrontImage: 'images/memoryCards/headphones-solid.svg'
+	// 	cardFrontImage: 'assets/images/memoryCards/headphones-solid.svg'
 	// }
-	// All card images provided by Font Awesome's Free License.
+	// All card images provided by Font Awesome's glorious Free License.  Thank you for giving back.
 ]
 
 let flipped = false
@@ -213,9 +213,7 @@ let matchedCards = []
 
 let alertWin = () => {
 	if (matchedCards.length === 16) {
-		alert(
-			'Congrats you have the memory of an elephant! \n Press the New Game Button to play again.'
-		)
+		alert('Congrats; you have the memory of an elephant!\nPress the New Game button to play again.\nThanks for playing')
 	}
 }
 
@@ -228,9 +226,9 @@ let resetCards = (firstCard, secondCard) => {
 		firstCard.classList.replace('flipped', 'unflipped')
 		secondCard.classList.replace('flipped', 'unflipped')
 		firstCard.setAttribute('src', ' ')
-		console.log(firstCard)
+		// console.log(firstCard)
 		secondCard.setAttribute('src', ' ')
-		console.log(secondCard)
+		// console.log(secondCard)
 
 		firstCard.setAttribute(
 			'style',
@@ -245,8 +243,6 @@ let resetCards = (firstCard, secondCard) => {
 
 // Check user's firstCard and secondCard matching Function
 
-// TODO: Fix card matching functionality. Note: the third card selected within the sequence (should be a new firstCard),
-// remains with cardFrontImage rendering but no longer has the `src` and has class unflipped
 let checkForMatch = () => {
 	// When firstCard and secondCard match
 
@@ -267,8 +263,8 @@ let checkForMatch = () => {
 	firstCard = null
 	secondCard = null
 	flipped = false
-	console.log(firstCard)
-	console.log(secondCard)
+	// console.log(firstCard)
+	// console.log(secondCard)
 	alertWin()
 }
 
@@ -289,15 +285,15 @@ let flipCard = function() {
 		return
 	}
 	// console.log(firstCard)
-	console.log(firstCard.getAttribute('src'))
+	// console.log(firstCard.getAttribute('src'))
 	secondCard = this
 	// console.log(secondCard)
-	console.log(secondCard.getAttribute('src'))
+	// console.log(secondCard.getAttribute('src'))
 
 	checkForMatch()
 }
 
-// Create game board
+// Create gameBoard
 let createBoard = (() => {
 	for (let i = 0; i < 16; i++) {
 		// Create an image element for each item in the array.
