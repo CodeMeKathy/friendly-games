@@ -23,9 +23,7 @@ Designed and implemented by Kathy Lambert.
 * [Font Awesome](https://fontawesome.com/how-to-use/on-the-web/using-with/react)
 
 ## Mockups
-![Application Mockup](https://github.com/CodeMeKathy/friendly-games/blob/c447b1402637816b6bd9de10390edf24a0bd2895/assets/images/Wireframe.png "Application Mockup")
-
-![overview](https://github.com/CodeMeKathy/friendly-games/blob/master/assets/images/CodeMeKathy's%20Memory%20Game%20-%20Vivaldi%202019-06-25%2017-32-19.png?raw=true "overview")
+![Application Mockup](https://github.com/CodeMeKathy/friendly-games/blob/master/assets/images/Wireframe.png?raw=true "Application Mockup")
 
 ## Goals
 ---
