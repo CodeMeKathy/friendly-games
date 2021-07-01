@@ -151,8 +151,6 @@ let flipCard = function() {
 	checkForMatch()
 }
 
-git branch -m main
-
 // Create gameBoard
 let createBoard = (() => {
 	for (let i = 0; i < 16; i++) {
