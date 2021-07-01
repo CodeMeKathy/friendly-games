@@ -97,7 +97,7 @@ let resetCards = (firstCard, secondCard) => {
 
 		firstCard.setAttribute(
 			'style',
-			'background-color:#ccfbfe; border: 1px solid; border-color:#af489a; padding: 1em'
+			'background-color:#ccfbfe; border: 1px solid; border-color:#af489a; padding: 1em;'
 		)
 		secondCard.setAttribute(
 			'style',
@@ -151,6 +151,8 @@ let flipCard = function() {
 	checkForMatch()
 }
 
+git branch -m main
+
 // Create gameBoard
 let createBoard = (() => {
 	for (let i = 0; i < 16; i++) {
@@ -179,5 +181,5 @@ let randomIndex, tempCardArray
 })()
 
 // References:
-// * Fisher–Yates Shuffle Algorithm
-// * Marina Ferreira: https://marina-ferreira.github.io/projects/js/memory-game/
+// - Fisher–Yates Shuffle Algorithm
+// - Marina Ferreira: https://marina-ferreira.github.io/projects/js/memory-game/
