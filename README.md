@@ -25,7 +25,7 @@ Designed and implemented by Kathy Lambert.
 ## Mockups
 ![Application Mockup](https://github.com/CodeMeKathy/friendly-games/blob/master/assets/images/Wireframe.png?raw=true "Application Mockup")
 
-## Goals
+## Future Features
 ---
 
 * [ ] Add Game Timer - A timer displaying the number of minutes and seconds that have elapsed. The timer is stopped when the player wins the game.
